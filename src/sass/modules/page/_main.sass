@@ -138,7 +138,7 @@
 .sec4
     width: 98.7vw
     height: 50vh
-
+    padding-bottom: 3%
     .bgDiv
         width: 100%
         height: 100%
@@ -158,23 +158,68 @@
             position: absolute
         .bgCDiv
             color: white
-            
+
             z-index: 2
-    .menuSec4
-        width: 98.7vw
-        height: fit-content
+.menuSec4
+    width: 98.7vw
+    height: 220vh
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    gap: 3%
+    .menuT
+        width: 100%
+        height: 30%
         display: flex
         flex-direction: column
-        justify-content: space-around
+        justify-content: center
         align-items: center
-        gap: 3%
-        .menuT
-            width: 100%
-            height: 30%
-            display: flex
-            flex-direction: column
-            justify-content: center
-            align-items: center
 
-@media screen and (max-width: 430px)
-    .imgDiv
+.sec5
+    width: 98.7vw
+    height: 60vh
+    background-color: #eeeeee
+    display: flex
+    justify-content: center
+    align-items: center 
+    .carousel
+        width: 100%
+        height: 100%
+        .carousel-inner
+            width: 100%
+            height: 100%
+
+            .carousel-item
+                width: 100%
+                height: 100%
+                gap: 2%
+                .tDiv
+                    width: 100%
+                    height: 100%
+                    display: flex
+                    justify-content: space-around
+                    align-items: center
+
+                    .testi
+                        width: 50%
+                        height: 100%
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        
+                    .line
+                        width: 0.5%
+                        height: 30%
+                        background-color: black
+                    .testiDiv
+                        width: 12%
+                        height: 30%
+                        border-radius: 50%
+                        background-image: url("../../public/img/testimonials/testimonials-2.jpg")
+                        background-size: cover
+                        border: solid white 6px
+                        
+
+// @media screen and (max-width: 430px)
+//     .imgDiv
