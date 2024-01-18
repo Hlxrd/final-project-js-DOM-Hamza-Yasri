@@ -12255,11 +12255,81 @@ textarea.form-control-lg {
   height: 80vh;
   background-color: #eeeeee;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.sec9 .sec9Div {
+.sec9 .container {
+  gap: 5%;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  color: white;
+}
+.sec9 .container .sec9Div1 {
+  width: 30%;
+  height: 90%;
+  position: fixed;
+  background-image: url("../../public/img/events-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3%;
+  background-color: red;
+  display: flex;
+  align-items: flex-end;
+}
+.sec9 .container .sec9Div2 {
+  width: 30%;
+  height: 90%;
+  background-image: url("../../public/img/events-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3%;
+  background-color: red;
+  display: flex;
+  align-items: flex-end;
+}
+.sec9 .container .sec9Div3 {
+  width: 30%;
+  height: 90%;
+  background-image: url("../../public/img/events-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3%;
+  background-color: red;
+  display: flex;
+  align-items: flex-end;
+}
+.sec9 .container .sec9Div4 {
+  width: 30%;
+  height: 90%;
+  background-image: url("../../public/img/events-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3%;
+  background-color: red;
+  display: flex;
+  align-items: flex-end;
+}
+.sec9 .sec9T {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.0274509804);
+  display: flex;
+}
+.sec9 .btnDiv {
+  width: 10%;
+  height: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-around;
+}
+.sec9 .btnDiv .btnSlide {
+  width: 15px;
+  height: 15px;
+  background-color: black;
 }
 
 /*# sourceMappingURL=app.css.map */
