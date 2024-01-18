@@ -12250,4 +12250,16 @@ textarea.form-control-lg {
   background-color: #ce1212;
 }
 
+.sec9 {
+  width: 98.7vw;
+  height: 80vh;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec9 .sec9Div {
+  width: 100%;
+}
+
 /*# sourceMappingURL=app.css.map */
