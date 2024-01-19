@@ -230,6 +230,16 @@
     width: 98.7vw
     height: 100vh
     background-color: #eeeeee
+    .container
+        width: 100%
+        height: 100%
+        .card
+            &:hover
+                width: 26% !important
+                border: solid #ce1216
+
+                transition: width 0.3s
+
     .sec7T
         width: 100%
         height: 20%
@@ -364,12 +374,12 @@
         // background-color: #fff
 
     .sec9T
-        width: 100%
+        width: 80%
         height: 100%
         position: absolute
         background-color: #ffffff07
         display: flex
-        
+
     .btnDiv
         width: 10%
         height: 2%
@@ -379,7 +389,7 @@
         .btnSlide
             width: 15px
             height: 15px
-            background-color: black 
+            background-color: black
 
 // .sec10
 //     width: 100vw
@@ -401,3 +411,60 @@
 
 // @media screen and (max-width: 430px)
 //     .imgDiv
+.modalDiv
+    width: 100vw
+    height: 100vh
+    position: fixed
+    display: none
+
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .modalContainer
+        width: 60%
+        height: 60%
+        background-color: #fff
+        position: absolute
+        z-index: 1
+        border-radius: 10px
+        .btnsDiv
+            width: 100%
+            height: 20%
+            .signup
+                width: 50%
+                height: 10%
+            .log-in
+
+    .bgmodal
+        width: 100%
+        height: 100%
+        background-color: black
+        position: relative
+        opacity: 50%
+        .closeMdl
+            width: 10%
+            height: 10%
+            background-color: red
+.vidDiv
+    width: 100vw
+    height: 100vh
+    background-color: black
+    opacity: 50%
+    position: absolute
+    
+
+.vidContainer
+    width: 80%
+    height: 80%
+    position: fixed
+    
+    
+    
+    .vid
+        position: fixed
+        background-color: #fff
+        z-index: 1
+        width: 80%
+        height: 80%
+
+        z-index: 1

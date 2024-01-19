@@ -9,43 +9,65 @@
 </head>
 
 <body>
-    <!-- ! nav bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><b>LIONS RESTO .</b></a>
-            <button class="bg-secondary rounded-pill">Sign-up / log in</button>
-            <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
+    <div class="modalDiv">
+        <div class="modalContainer d-flex ">
+            <div class="btnsDiv">
+                <button id="signup" class="">SIGN-UP</button>
+                <button id="log-in" class="">LOG-IN</button>
             </div>
+            
+            <button class="closeMdl h-25 bg-danger">X</button>
         </div>
-    </nav>
+        <div class="bgmodal"></div>
+    </div>
+    <!-- ! header -->
+    <header>
+        <!-- * nav bar -->
+        <nav class="navbar  navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><b>LIONS RESTO .</b></a>
+                <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn-signup bg-secondary rounded-pill">Sign-up / log in</button>
+            </div>
+
+        </nav>
+
+    </header>
+
     <!-- ! main -->
+<div class="vidDiv d-none">
+</div>
+<div class="vidContainer d-none">
+    <div class="vid"></div>
+</div>
     <main class="gap-3">
         <!-- * Hero section -->
         <section class="heroSec d-flex flex-lg-row flex-column-reverse">
@@ -491,7 +513,7 @@
                 <p>CHEFS</p>
                 <h1>OUR PERSONAL CHEFS</h1>
             </div>
-            <div class="d-flex h-75 flex-wrap justify-content-center align-items-center gap-4">
+            <div class="container d-flex h-75 flex-wrap justify-content-center align-items-center gap-4">
                 <div class="card w-25 h-100 text-center" style="width: 18rem;">
                     <img src="./public/img/chefs/chefs-1(1).jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -533,16 +555,17 @@
                 </div>
                 <div class="formDiv">
                     <form class="frm gap-4">
-                        <div class="pInfo gap-3 d-flex flex-wrap justify-content-around align-items-center">
-                            <input type="text" placeholder="Your Name">
-                            <input type="text" placeholder="Your Email">
-                            <input type="text" placeholder="Your Phone">
-                            <input type="text" placeholder="Date">
-                            <input type="text" placeholder="Time">
-                            <input type="text" placeholder="# of people">
+                        <div class="pInfo gap-3 d-flex flex-wrap flex-row align-items-center">
+                            <input type="text" class="rounded-2 border-1  px-2" placeholder="Your Name">
+                            <input type="text" class="rounded-2 border-1  px-2" placeholder="Your Email">
+                            <input type="text" class="rounded-2 border-1  px-2" placeholder="Your Phone">
+                            <input type="text" class="rounded-2 border-1  px-2" placeholder="Date">
+                            <input type="text" class="rounded-2 border-1  px-2" placeholder="Time">
+                            <input type="text" class="rounded-2 border-1  px-2" placeholder="# of people">
                         </div>
                         <div class="msgDiv d-lg-flex flex-column justify-content-around align-items-center gap-4">
-                            <textarea name="" id="" cols="111" rows="5"></textarea>
+                            <textarea name="" id="" cols="111" rows="5" placeholder="Message..."
+                                class="px-2"></textarea>
                         </div>
                         <button class="w-25 border-0 rounded-pill ">BOOK A TABLE</button>
                     </form>
@@ -563,7 +586,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta enim qui laudantium
                                     debitis architecto laboriosam!</p>
                             </div>
-    
+
                         </div>
                     </div>
                 </div>
@@ -578,7 +601,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta enim qui laudantium
                                     debitis architecto laboriosam!</p>
                             </div>
-    
+
                         </div>
                     </div>
                 </div>
@@ -593,7 +616,7 @@
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta enim qui laudantium
                                     debitis architecto laboriosam!</p>
                             </div>
-    
+
                         </div>
                     </div>
                 </div>
@@ -608,12 +631,12 @@
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta enim qui laudantium
                                     debitis architecto laboriosam!</p>
                             </div>
-    
+
                         </div>
                     </div>
                 </div>
-                
-    
+
+
             </div>
             <div class="btnDiv">
                 <div class="btnSlide rounded-5"></div>
@@ -720,69 +743,69 @@
         </section>
 
     </main>
-<!-- * Footer -->
-<footer class="bg-dark">
-    <div class="d-flex flex-lg-row flex-column text-white w-100 container p-5 gap-4 border-bottom">
-        <div class="d-flex align-items-start gap-2">
-            <div class="mt-2">
-                <i class="fa-solid fa-location-dot fs-3 text-white"></i>
+    <!-- ! Footer -->
+    <footer class="bg-dark">
+        <div class="d-flex flex-lg-row flex-column text-white w-100 container p-5 gap-4 border-bottom">
+            <div class="d-flex align-items-start gap-2">
+                <div class="mt-2">
+                    <i class="fa-solid fa-location-dot fs-3 text-white"></i>
+                </div>
+                <div>
+                    <h4>Adress</h4>
+                    <p class="w-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, iure!</p>
+                </div>
             </div>
-            <div>
-                <h4>Adress</h4>
-                <p class="w-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, iure!</p>
-            </div>
-        </div>
 
-        <div class="d-flex align-items-start gap-2 w-50">
-            <div class="mt-2">
-                <i class="fa-solid fa-phone fs-3 text-white"></i>
+            <div class="d-flex align-items-start gap-2 w-50">
+                <div class="mt-2">
+                    <i class="fa-solid fa-phone fs-3 text-white"></i>
+                </div>
+                <div>
+                    <h4>Reservation</h4>
+                    <p>phone : 0123456789</p>
+                    <p>Email : nanana@gmail.com</p>
+                </div>
             </div>
-            <div>
-                <h4>Reservation</h4>
-                <p>phone : 0123456789</p>
-                <p>Email : nanana@gmail.com</p>
-            </div>
-        </div>
 
-        <div class="d-flex align-items-start gap-2 w-50">
-            <div class="mt-2">
-                <i class="fa-solid fa-clock fs-3 text-white"></i>
+            <div class="d-flex align-items-start gap-2 w-50">
+                <div class="mt-2">
+                    <i class="fa-solid fa-clock fs-3 text-white"></i>
+                </div>
+                <div>
+                    <h4>Opning hours</h4>
+                    <p><b>Monday: 11AM</b>- 23PM</p>
+                    <p>Sunday Closed</p>
+                </div>
             </div>
-            <div>
-                <h4>Opning hours</h4>
-                <p><b>Monday: 11AM</b>- 23PM</p>
-                <p>Sunday Closed</p>
-            </div>
-        </div>
 
-        <div class="d-flex align-items-start gap-2 w-50">
-            <div>
-                <h4>Follow us</h4>
-                <div class="d-flex gap-3">
-                    <div class="border border-2 rounded-circle p-2">
-                        <i class="fa-brands fa-twitter fs-3"></i>
-                    </div>
-                    <div class="border border-2 rounded-circle p-2">
-                        <i class="fa-brands fa-facebook fs-3"></i>
-                    </div>
-                    <div class="border border-2 rounded-circle p-2">
-                        <i class="fa-brands fa-instagram fs-3"></i>
-                    </div>
+            <div class="d-flex align-items-start gap-2 w-50">
+                <div>
+                    <h4>Follow us</h4>
+                    <div class="d-flex gap-3">
+                        <div class="border border-2 rounded-circle p-2">
+                            <i class="fa-brands fa-twitter fs-3"></i>
+                        </div>
+                        <div class="border border-2 rounded-circle p-2">
+                            <i class="fa-brands fa-facebook fs-3"></i>
+                        </div>
+                        <div class="border border-2 rounded-circle p-2">
+                            <i class="fa-brands fa-instagram fs-3"></i>
+                        </div>
 
-                    <div class="border border-2 rounded-circle p-2">
-                        <i class="fa-brands fa-linkedin fs-3"></i>
+                        <div class="border border-2 rounded-circle p-2">
+                            <i class="fa-brands fa-linkedin fs-3"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="text-white p-3">
-        <div class="d-flex align-items-center flex-column">
-            <p>&copy;Copyright <b>Yummy</b>.All rights resrved</p>
-            <p>Sesigned By BootstrapMad</p>
+        <div class="text-white p-3">
+            <div class="d-flex align-items-center flex-column">
+                <p>&copy;Copyright <b>Yummy</b>.All rights resrved</p>
+                <p>Sesigned By BootstrapMad</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
 
