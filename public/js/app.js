@@ -15,3 +15,8 @@ closeMdl.addEventListener("click" , (e) => {
 
 // ! watch video
 let watch = document.querySelector(".heroWatch");
+
+watch.addEventListener("click" , () =>{
+
+});
+

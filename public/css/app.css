@@ -12111,7 +12111,25 @@ header .navBar {
   height: 30%;
   background-color: black;
 }
-.sec5 .carousel .carousel-inner .carousel-item .tDiv .testiDiv {
+.sec5 .carousel .carousel-inner .carousel-item .tDiv .testiDiv1 {
+  width: 12%;
+  height: 30%;
+  border-radius: 50%;
+  background-image: url("../../public/img/testimonials/testimonials-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid white 6px;
+}
+.sec5 .carousel .carousel-inner .carousel-item .tDiv .testiDiv1 {
+  width: 12%;
+  height: 30%;
+  border-radius: 50%;
+  background-image: url("../../public/img/testimonials/testimonials-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid white 6px;
+}
+.sec5 .carousel .carousel-inner .carousel-item .tDiv .testiDiv1 {
   width: 12%;
   height: 30%;
   border-radius: 50%;
@@ -12222,7 +12240,6 @@ header .navBar {
 .sec9 {
   width: 98.7vw;
   height: 80vh;
-  background-color: #eeeeee;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12296,8 +12313,8 @@ header .navBar {
   justify-content: space-around;
 }
 .sec9 .btnDiv .btnSlide {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background-color: black;
 }
 
